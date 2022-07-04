@@ -18,8 +18,11 @@ class Unit:
 
 
 class Field:
+    def __init__(self, field):
+        self.field = field
+
     def set_unit(self, x, y, unit: Unit):
-        pass
+        return self.field
 
 
 class FieldAdapter:

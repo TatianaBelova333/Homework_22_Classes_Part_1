@@ -9,7 +9,6 @@
 # по более узким функциям и написать их с нуля
 
 
-csv = """Вася;39\nПетя;26\nВасилий Петрович;9"""
 
 
 def get_users_list():
@@ -58,6 +57,9 @@ def get_users_list():
             result_data.append(person)
     return result_data
 
-
 if __name__ == '__main__':
-    print(get_users_list())
+    y = _read(csv)
+    z = _sort(y)
+    print(_filter(z))
+    # print(get_users_list())
+
